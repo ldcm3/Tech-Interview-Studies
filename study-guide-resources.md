@@ -24,3 +24,6 @@
 
 - [Introduction to Algorithms -Cormen] (https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
     
+#### Some other useful resources
+
+- [Top 50 OOP questions](http://career.guru99.com/top-50-oops-interview-questions/)
