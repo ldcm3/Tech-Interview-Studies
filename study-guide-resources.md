@@ -23,6 +23,8 @@
 - [Cracking the Coding Interview] (https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=pd_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=KK5ZDDZ12WPGHYA3DDMW)
 
 - [Introduction to Algorithms -Cormen] (https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+
+- [Design Patterns - Elements Reusable Object Oriented] (https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-ebook/dp/B000SEIBB8)
     
 #### Some other useful resources
 
