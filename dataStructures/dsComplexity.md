@@ -28,9 +28,8 @@
     * A linked list chains nodes together by pointing one node's reference towards another node.
     * Designed to optimize insertion and deletion, slow at indexing and searching.
     * Stack and Queue (double-linked), commonly implemented with linked lists but can be made from arrays too.
-
-   * Big O efficiency:
-
+    
+    * Big O efficiency
         - Indexing: Linked Lists: O(n)
         - Search: Linked Lists: O(n)
         - Optimized Search: Linked Lists: O(n)
