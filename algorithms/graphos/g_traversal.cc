@@ -84,15 +84,6 @@ void Graph::BFS(int s)
             }
         }
     }
-    
-
-    for (int i =0 ;  i < V; i++)
-    {
-        if(level[i] == level[s])
-            counter++;
-    }
-    
-    
 }
 
 
