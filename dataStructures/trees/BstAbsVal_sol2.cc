@@ -61,7 +61,7 @@ void minDiffUtil(node* root,int val,int &minDiffValue)
 
 int minDiff(node* root,int val)
 {
-    int minDiffValue = 9999;
+    int minDiffValue = 999999; // INT_MAX
     
     minDiffUtil(root,val,minDiffValue);
     
