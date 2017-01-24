@@ -3,6 +3,14 @@
 
 #### Online Resources
 
+- [CS50x by Harvard] (https://www.edx.org/course/introduction-computer-science-harvardx-cs50x?gclid=CO3kqMnB2tECFQoA0wodBIcMZg)
+    * Introduction to Computer Science
+
+- [Introduction to Algorithms by MIT] (https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
+
+- [CS162 by Berkeley] (https://www.youtube.com/watch?v=XgQo4JkN4Bw&list=PL3289DD0D0F0CD4A3)
+    * Operating Systems
+
 - [Google Interview University by jwasham ](https://github.com/jwasham/google-interview-university#object-oriented-programming)
     * A complete daily plan for studying to become a Google software engineer
 
