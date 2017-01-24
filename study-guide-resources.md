@@ -3,6 +3,14 @@
 
 #### Online Resources
 
+- [CS50x by Harvard] (https://www.edx.org/course/introduction-computer-science-harvardx-cs50x?gclid=CO3kqMnB2tECFQoA0wodBIcMZg)
+    * Introduction to Computer Science
+
+- [Introduction to Algorithms by MIT] (https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
+
+- [CS162 by Berkeley] (https://www.youtube.com/watch?v=XgQo4JkN4Bw&list=PL3289DD0D0F0CD4A3)
+    * Operating Systems
+
 - [Google Interview University by jwasham ](https://github.com/jwasham/google-interview-university#object-oriented-programming)
     * A complete daily plan for studying to become a Google software engineer
 
@@ -15,6 +23,9 @@
 - [GeeksforGeeks] (http://www.geeksforgeeks.org/)
     * An extensive collection of solved questions, articles, quizes and discussion forums
 
+- [LeetCode]  (https://leetcode.com/)
+    * Platform for preparing technical coding interviews and assessing your knowledge of data structures and algorithms.
+    
 - [Pramp - Practice Coding Interview] (https://www.pramp.com/)
     * Practice coding interviews anytime right from your browser with collaborative real-time code editor and HD video chat.
 
