@@ -41,10 +41,16 @@
 - [ ] Polymorphism (Overriding and Overloading)
 - [ ] Inheritance
 - [ ] Encapsulation
+
 ## Concurrency
 - [ ] Multithreading
 - [ ] Concurrency
 - [ ] Locks
+
 ## Design
 - [ ] Object-oriented Design
 - [ ] System Design and Scalability
+
+## Operating Systems
+
+## Turing Machine
