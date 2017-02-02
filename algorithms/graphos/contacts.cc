@@ -2,12 +2,13 @@
 #include<unordered_set>
 #include<unordered_map>
 #include<vector>
+#include<queue>
 
 using namespace std;
 
 
 void findGroups(const unordered_map<string, unordered_set<string>>& graph,
-                unordered_set<string>& visited, vector<string>& group,
+                unordered_set<string>& visited,
                 vector<vector<string>>& ans, const string& contact);
 
 
@@ -42,14 +43,14 @@ vector<vector<string>> contactGroups(const unordered_map<string,unordered_set<st
     }
    
     vector<vector<string>> ans;
-    vector<string> group;
     unordered_set<string> visited;
+    
     
     for (const auto& v : graph)
     {
        if(visited.find(v.first) == visited.end())
        {
-           findGroups(graph,visited,group,ans, v.first);
+           findGroups(graph,visited,ans, v.first);
 
        }
     }
@@ -59,29 +60,34 @@ vector<vector<string>> contactGroups(const unordered_map<string,unordered_set<st
 }
 
 void findGroups(const unordered_map<string, unordered_set<string>>& graph,
-                unordered_set<string>& visited, vector<string>& group,
+                unordered_set<string>& visited,
                 vector<vector<string>>& ans,  const string& contact)
 {
-    group.emplace_back(contact);
-
-    visited.emplace(contact);
-
-    auto list = (graph.find(contact))->second;
+    vector<string> group;
+    queue<string> q;
+    q.emplace(contact);
     
-    cout << list.size() << endl;
-    
-    for (const auto& connectedContact : list)
+    while(!q.empty())
     {
-        if(visited.find(connectedContact) == visited.end())
+        string cur = q.front();
+
+        q.pop();
+        group.emplace_back(cur);
+        
+        auto list = (graph.find(contact))->second;
+    
+        for (const auto& connectedContact : list)
         {
-            findGroups(graph,visited,group,ans,connectedContact);
+            if(visited.find(connectedContact) == visited.end())
+            {
+               q.emplace(connectedContact);
+               visited.emplace(connectedContact);
+
+            }
         }
     }
 
-    
     ans.emplace_back(group);
-    group.pop_back();
-
 }
 
 int main()
@@ -95,7 +101,7 @@ int main()
     contacts["c1"]   = c1;
     contacts["c2"] = c2;
     contacts["c3"] = c3;
-   // contacts["c4"] = c4;
+    contacts["c4"] = c4;
     
    vector<vector<string>> ans =  contactGroups(contacts);
    
