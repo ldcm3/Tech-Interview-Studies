@@ -50,6 +50,12 @@
 ## Design
 - [ ] Object-oriented Design
 - [ ] System Design and Scalability
+- [ ] HTTP (at the protocol level)
+- [ ] Databases (indexes, query planning)
+- [ ] CDNs
+- [ ] Caching (LRU cache, memcached, redis)
+- [ ] Load balancers
+- [ ] Distributed worker systems
 
 ## Operating Systems
 
