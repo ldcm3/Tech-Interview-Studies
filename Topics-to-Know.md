@@ -9,9 +9,11 @@
 ## Complexity
 - [ ]  Big-O time complexity
 - [ ]  Space complexity
+
 ## Low Level
 - [ ]  Bit manipulation
 - [ ]  Bit masking
+
 ##  Data Structures
 - [ ]  Hash Tables
 - [ ]  Linked Lists
@@ -23,6 +25,7 @@
 - [ ]  Queues
 - [ ]  Graphs
 - [ ]  Tries 
+
 ## Databases
 - [ ]  Basic SQL knowledge
 - [ ]  Database modeling (tables and columns)
