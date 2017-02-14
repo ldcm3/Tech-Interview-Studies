@@ -72,11 +72,13 @@ void morrisInorder(BSTNode* root)
     }
 }
 
+
+
 int main()
 {
     BSTNode *root = new BSTNode(10);
     root->left        = new BSTNode(5);
-    root->right       = new BSTNode(30);
+    root->right       = new BSTNode(6);
     root->left->left  = new BSTNode(-2);
     root->left->right = new BSTNode(6); 
  

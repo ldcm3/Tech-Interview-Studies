@@ -32,7 +32,7 @@ bool hasCycle(GraphVertex* cur);
 
 bool isDeadLocked(vector<GraphVertex>& G)
 {
-    return any_of(begin(G), end(    G), [](GraphVertex& v){
+    return any_of(begin(G), end(G), [](GraphVertex& v){
         return v.color == GraphVertex :: white && hasCycle(&v); // only white nodes are reacheable
     });
     
