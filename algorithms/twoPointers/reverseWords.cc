@@ -2,42 +2,27 @@
 
 using namespace std;
 
-void reverseWordUtil(string &str)
-{
-    size_t start = 0;
-    size_t end = str.length() - 1;
+
+void reverseWords(string& sentence) {
     
-    while(start < end)
+   reverse(sentence.begin(), sentence.end());
+
+    size_t s = 0;
+    size_t e;
+
+    while((e = sentence.find(' ',s)) != string::npos)
     {
-        swap(str[start], str[end]);
-        ++start;
-        --end;
+         reverse(sentence.begin() + s, sentence.begin() + e);
+        s = e + 1;
     }
+    
+    reverse(sentence.begin() + s, sentence.end());
+
+    return sentence;
+
 }
 
-void reverseWords(string &str)
-{
-    reverseWordUtil(str);
-    string tmp = "";
-    size_t startWord = 0;
-    for (size_t i = 0; i < str.length(); ++i) 
-    {
-        if (str[i] != ' ')
-        {
-            tmp += str[i];
-        }
-        else
-        {
-            reverseWordUtil(tmp);
-            str.replace(startWord,i - startWord, tmp);
-            startWord = i + 1;
-            tmp = "";
-        }
-    }
 
-    reverseWordUtil(tmp);
-    str.replace(startWord,str.length() - startWord, tmp);
-}
 
 int main()
 {
