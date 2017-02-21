@@ -39,7 +39,7 @@ TreeNode* findSuccessor(TreeNode* node)
         
     }
     
-    return cur->parent;
+    return cur->parent; 
     
 }
 int main()
