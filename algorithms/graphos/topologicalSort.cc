@@ -11,6 +11,7 @@
 #include<iostream>
 #include<unordered_set>
 #include<list>
+#include<stack>
 
 using namespace std;
 
@@ -19,6 +20,7 @@ class Graph
     private:
         int V;
         list<int> *adj;
+        stack<int> topS;
         
     public:
       
@@ -48,6 +50,12 @@ void Graph :: topologicalSort()
     for (int i = 0; i < V; i++)
       if (visited.find(i) == visited.end())
         topologicalSortUtil(i, visited);
+    
+    while (!topS.empty())
+    {
+        cout << topS.top() << " ";
+        topS.pop();
+    }
 }
 
 void Graph :: topologicalSortUtil(int v, unordered_set<int> & visited)
@@ -60,7 +68,7 @@ void Graph :: topologicalSortUtil(int v, unordered_set<int> & visited)
             topologicalSortUtil(*it,visited);
     }
 
-    cout << v << " ";
+    topS.push(v);
 }
 
 
@@ -76,7 +84,7 @@ int main()
     g.addEdge(2, 3);
     g.addEdge(3, 1);
 
-    cout << "Following is Topological Sort \n";
+    cout << "Following is Topological Sort ---<<< \n";
     g.topologicalSort();
     cout << endl;
     

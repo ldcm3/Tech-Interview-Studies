@@ -21,7 +21,7 @@ void generateAllPermutations(string str,size_t idx,vector<string> &permutations)
 }
 int main()
 {
-    string str = "abc";
+    string str = "1234";
     vector<string> perms;
     
     generateAllPermutations(str,0,perms);
