@@ -6,19 +6,19 @@ using namespace std;
 int partition(vector<int>& arr, size_t low, size_t high)
 {
     int pivot = arr[high];
-    int i = (low - 1);
+    int wall = (low - 1);
     
     for (int j = low; j < high; ++j)
     {
         if (arr[j] <= pivot)
         {
-            ++i;
-            swap(arr[i],arr[j]);
+            ++wall;
+            swap(arr[wall],arr[j]);
         }
     }
     
-    swap (arr[i + 1], arr[high]);
-    return (i + 1);
+    swap (arr[wall + 1], arr[high]);
+    return (wall + 1);
 }
 
 void quickSort(vector<int>& arr, int low, int high)
@@ -34,7 +34,7 @@ void quickSort(vector<int>& arr, int low, int high)
 
 int main()
 {
-    vector<int> unsortedArr {5,4,1,2,3};
+    vector<int> unsortedArr {5,2,1,4,3,7};
     quickSort(unsortedArr, 0 , unsortedArr.size() - 1);
     
     for (auto &n : unsortedArr)

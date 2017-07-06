@@ -35,7 +35,9 @@ void quickSort(vector<int>& arr, size_t low, size_t high)
 
 int main()
 {
-    vector<int> unsortedArr {3,2,7,1,2,4,3};
+    // vector<int> unsortedArr {3,2,7,1,2,4,3};
+    vector<int> unsortedArr = {5,2,1,4,3,7};
+
     quickSort(unsortedArr, 0 , unsortedArr.size() - 1);
     
     for (auto &n : unsortedArr)

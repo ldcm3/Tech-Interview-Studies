@@ -33,6 +33,6 @@ int fib(int n)
 
 int main()
 {
-    cout << fib(4) << endl;
+    cout << fib(5) << endl;
     return 0;
 }
